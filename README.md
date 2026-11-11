@@ -124,4 +124,4 @@ src/
 ## License
 
 Copyright 2026 INRAE / Politecnico di Torino  
-Distributed under a [MIT No Attribution](LICENSE) (MIT-0)
+Distributed under the [MIT No Attribution license](LICENSE) (MIT-0)
