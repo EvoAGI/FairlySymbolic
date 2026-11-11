@@ -70,3 +70,6 @@ Testing/
 arc_solver
 runs/
 submission.json
+
+# Editor settings
+.vscode/
