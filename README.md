@@ -1,18 +1,18 @@
 # Fairly Symbolic
 
-*FairlySymbolic* co-evolves how a grid is parsed into a graph and the rewrite-rule program run on it, with no neural network. Programs express transformations through explicit symbolic operations on objects and their relationships, making it possible to examine how a result is obtained.
+*FairlySymbolic* is a fully symbolic, neural-free ARC-AGI solver written in C++17. It uses evolutionary search to evolve, for each task, a grid parser, a program of rewrite rules and an output projector together, guided by an object-aware fitness. Solutions express transformations through explicit operations on objects and their relationships, making it possible to examine how a result is obtained.
 
-Results (see [arXiv:2611.13831](https://arxiv.org/abs/2611.13831) for details)
+Results summary (see [arXiv:2611.13831](https://arxiv.org/abs/2611.13831) for details)
 
 | Benchmark | Solved |
 |---|---|
-| ConceptARC | 99.4% |
 | ARC-AGI-1 training | 49.3% |
 | ARC-AGI-1 evaluation | 27.5% |
 | ARC-AGI-2 semi-private | 2.5% |
-| ARGA 160-task ARC-AGI-1 subset | 54.4% |
+| ARGA 160-task (ARC-AGI-1 subset) | 54.4% |
+| ConceptARC | 99.4% |
 
-If you use this work in your research, please cite:
+**Nota Bene**: If you use this work in your research, please cite:
 
 > L. Favole, G. Mongardi, G. Squillero, A. Tonda; "Ceci n'est pas une pipe — Toward a Symbolic Solver for the Abstraction and Reasoning Corpus Using Evolutionary Computation"; [arXiv:2611.13831](https://arxiv.org/abs/2611.13831); 2026.
 
@@ -38,7 +38,7 @@ If you use this work in your research, please cite:
 
 The central idea is that solving an ARC task requires more than identifying the correct transformations. It also requires finding a suitable abstraction of the input and a way to reconstruct the desired output. *FairlySymbolic* addresses this challenge through configurable graph-based representations, in which objects, subobjects, and their relationships provide the structures on which symbolic programs operate. By evolving the representation, transformations, and reconstruction together, the search can discover solutions that would be difficult to express using a fixed abstraction.
 
-![Fairly Symbolic pipeline](img/evolution.png).
+![Fairly Symbolic pipeline](img/evolution.png)
 
 Each candidate solution consists of three interconnected components:
 
