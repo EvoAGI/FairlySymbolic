@@ -9,7 +9,7 @@ Results (see [arXiv:2611.13831](https://arxiv.org/abs/2611.13831) for details)
 | ConceptARC | 99.4% |
 | ARC-AGI-1 training | 49.3% |
 | ARC-AGI-1 evaluation | 27.5% |
-| ARC-AGI-2 public evaluation | 2.5% |
+| ARC-AGI-2 semi-private | 2.5% |
 | ARGA 160-task ARC-AGI-1 subset | 54.4% |
 
 If you use this work in your research, please cite:
